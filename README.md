@@ -36,7 +36,7 @@ This layered architecture ensures separation between presentation, business logi
 
 5. MODULAR DESCRIPTION:
    
--x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 5.1 BOOK MANAGEMENT MODULE:
 The Book Management Module is responsible for maintaining the complete lifecycle of book records within the system. 
@@ -56,7 +56,7 @@ Module Dependencies:
 Transaction Module for issuance and return updates
 Storage Module for persistence operations
 
--x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 5.2 USER MANAGEMENT MODULE:
 The User Management Module handles all operations associated with library users.
@@ -75,7 +75,7 @@ Module Dependencies:
 Transaction Module for validating issue and return operations
 Storage Module for persistence of user records
 
--x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 5.3 TRANSACTION MANAGEMENT MODULE:
 The Transaction Management Module implements the core operational logic of the library system.
@@ -96,7 +96,7 @@ Design Characteristics:
 Uses nested dictionary structures for tracking transactions
 Implements rule-based validation logic for consistency
 
--x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 5.4 SEARCH MODULE:
 The Search Module provides retrieval functionality for book records based on user-defined criteria.
@@ -110,7 +110,7 @@ Design Characteristics:
 Implements linear search algorithm
 Operates in read-only mode without modifying data state
 
--x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 5.5 ANALYTICS MODULE:
 The Analytics Module is responsible for generating statistical insights from system data.
@@ -124,7 +124,7 @@ Design Characteristics:
 Utilizes data aggregation techniques
 Integrates with Pandas for structured data representation
 
--x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 5.6 STORAGE MODULE
 The Storage Module provides persistent data management capabilities for the system.
@@ -139,7 +139,7 @@ File-based storage mechanism using text files
 Implements error handling for file operations
 Ensures data persistence across sessions
 
--x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 5.7 MAIN CONTROLLER MODULE:
 The Main Controller Module acts as the entry point and control unit of the system.
