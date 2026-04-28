@@ -1,12 +1,13 @@
+book_list = []
+
 from library import storage
 import pandas as pd
 
-# Class to manage all book-related operations
 class Library:
 
-    # Constructor: initializes empty book list
     def __init__(self):
-        self.book_list = []
+        global book_list
+        self.book_list = book_list
 
     # Returns total number of books
     def __len__(self):
@@ -24,7 +25,7 @@ class Library:
             "issued": False,                 # Book is not issued initially
             "can_issue": can_issue == "yes"  # Convert input to boolean
         })
-        storage.save()  # Save data after adding
+        self.storage.save()  # Save data after adding
         print("Book added and saved!")
 
     # Display books with different options
@@ -72,7 +73,7 @@ class Library:
     def delete(self, index):
         try:
             self.book_list.pop(index)
-            storage.save()  # Save after deletion
+            self.storage.save()  # Save after deletion
             print("Book deleted")
         except:
             print("Invalid index")
@@ -82,7 +83,7 @@ class Library:
         try:
             self.book_list[index]["title"] = title
             self.book_list[index]["author"] = author
-            storage.save()  # Save after update
+            self.storage.save()  # Save after update
             print("Book updated")
         except:
             print("Invalid index")
@@ -99,7 +100,7 @@ class Library:
                 print("Reference book cannot be issued")
                 return
             self.book_list[index]["issued"] = True
-            storage.save()
+            self.storage.save()
         except:
             print("Invalid index")
 
@@ -107,7 +108,7 @@ class Library:
     def mark_returned(self, index):
         try:
             self.book_list[index]["issued"] = False
-            storage.save()
+            self.storage.save()
         except:
             print("Invalid index")
 

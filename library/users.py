@@ -1,4 +1,5 @@
 from library import storage
+user_list = []
 
 # Class to manage users in the library system
 class UserManager:

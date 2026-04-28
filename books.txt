@@ -1,0 +1,1 @@
+{'title': 'Harry Potter', 'author': 'Avishi', 'issued': False, 'can_issue': True}

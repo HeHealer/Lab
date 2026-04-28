@@ -1,3 +1,4 @@
+issued_books = {}
 from library import books, storage
 import time
 
